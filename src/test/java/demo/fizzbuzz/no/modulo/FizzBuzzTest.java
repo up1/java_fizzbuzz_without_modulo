@@ -29,5 +29,16 @@ public class FizzBuzzTest {
 		assertEquals("FizzBuzz", fizzBuzz.say(30));
 		assertEquals("FizzBuzz", fizzBuzz.say(45));
 	}
+	
+	@Test
+	public void กรณีอื่นๆ() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		assertEquals("1", fizzBuzz.say(1));
+		assertEquals("2", fizzBuzz.say(2));
+		assertEquals("4", fizzBuzz.say(4));
+		assertEquals("7", fizzBuzz.say(7));
+		assertEquals("8", fizzBuzz.say(8));
+		assertEquals("11", fizzBuzz.say(11));
+	}
 
 }
