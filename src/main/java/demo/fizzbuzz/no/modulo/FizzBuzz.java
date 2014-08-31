@@ -3,6 +3,9 @@ package demo.fizzbuzz.no.modulo;
 public class FizzBuzz {
 
 	public String say(int input) {
+		if(isBuzz(input) && isFizz(input)) {
+			return "FizzBuzz";
+		}
 		if(isFizz(input)) {
 			return "Fizz";
 		}
