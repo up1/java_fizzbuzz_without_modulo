@@ -21,5 +21,13 @@ public class FizzBuzzTest {
 		assertEquals("Buzz", fizzBuzz.say(10));
 		assertEquals("Buzz", fizzBuzz.say(20));
 	}
+	
+	@Test
+	public void numberDivideByThreeAndFiveShouldReturnFizzBuzz() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		assertEquals("FizzBuzz", fizzBuzz.say(15));
+		assertEquals("FizzBuzz", fizzBuzz.say(30));
+		assertEquals("FizzBuzz", fizzBuzz.say(45));
+	}
 
 }
